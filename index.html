@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Mohamed Ahmed Mahdy — Architectural Visualization & AI portfolio." />
+  <meta name="theme-color" content="#f4f2ed" />
+  <title>Mohamed Mahdy — ArchViz & AI</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="page-loader" id="loader"><span>MM</span></div>
+  <header class="topbar" id="topbar">
+    <a class="wordmark" href="#top" aria-label="Home">MOHAMED MAHDY</a>
+    <p class="descriptor">ARCHITECTURAL VISUALIZATION<br>& AI-ASSISTED WORKFLOWS</p>
+    <nav class="desktop-nav">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="menu-button" id="menuButton" aria-expanded="false">Menu</button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-title-wrap">
+        <p class="kicker">Selected portfolio · Cairo, Egypt · 2026</p>
+        <h1>ARCHVIZ<span>&</span>AI</h1>
+      </div>
+      <figure class="hero-visual" data-parallax>
+        <img src="assets/pages/page-140.jpg" alt="Architectural visualization by Mohamed Mahdy" fetchpriority="high" />
+        <figcaption><span>AI Visualization Project</span><span>Selected Work 01</span></figcaption>
+      </figure>
+      <div class="hero-bottom">
+        <p>Architectural designer and 3D visualizer exploring photorealistic imagery, atmosphere and controlled AI workflows.</p>
+        <a href="#work">Scroll to selected work ↓</a>
+      </div>
+    </section>
+
+    <section class="work-section" id="work">
+      <div class="section-line"><span>Selected Work</span><span>01 — 08</span></div>
+      <div class="work-grid" id="workGrid"></div>
+      <div class="all-work-row">
+        <p>Architecture · Interiors · Landscape · Exhibition · AI</p>
+        <button id="showAllProjects">View all projects <span>↗</span></button>
+      </div>
+    </section>
+
+    <section class="statement-section">
+      <p class="statement-index">02 — Approach</p>
+      <p class="statement">I use AI as a <em>controlled production layer</em> — to explore faster, refine images and extend visual possibilities while keeping architectural intent at the center.</p>
+    </section>
+
+    <section class="ai-feature">
+      <div class="section-line light"><span>AI-Assisted Visualization</span><span>Workflow Studies</span></div>
+      <div class="ai-feature-grid">
+        <div class="ai-feature-copy">
+          <span class="tiny-label">ComfyUI / Camera / Relight / Inpaint</span>
+          <h2>ONE IMAGE.<br>MULTIPLE<br>POSSIBILITIES.</h2>
+          <p>Architecture-preserving editing, camera exploration, relighting, inpainting, outpainting, upscale and human integration.</p>
+          <button class="text-button" data-open="multicamera">View AI workflow ↗</button>
+        </div>
+        <figure class="ai-feature-image"><img src="assets/pages/page-133.jpg" alt="AI multicamera architectural visualization"></figure>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="section-line"><span>About</span><span>03</span></div>
+      <div class="about-grid">
+        <div>
+          <h2>MOHAMED<br>AHMED<br>MAHDY</h2>
+        </div>
+        <div class="about-copy">
+          <p class="lead">Architectural Designer · 3D Visualization · AI-Assisted Workflows</p>
+          <p>Focused on exterior design, photorealistic rendering and atmospheric storytelling. I combine architectural thinking with AI-assisted workflows to accelerate concept creation, refinement and visualization production.</p>
+          <div class="capabilities">
+            <div><span>Visualization</span><p>3ds Max · Corona Renderer · Lumion · Twinmotion</p></div>
+            <div><span>Architecture</span><p>AutoCAD · Archicad · Revit 2D</p></div>
+            <div><span>AI</span><p>ComfyUI · Inpainting · Relighting · Camera Exploration · Render Optimization</p></div>
+          </div>
+          <a class="underlined" href="assets/Mohamed_Ahmed_Mahdy_Portfolio.pdf" target="_blank" rel="noopener">Open optimized portfolio PDF ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-top"><span>04 — Contact</span><span>Available for opportunities</span></div>
+      <h2>LET'S MAKE<br>SOMETHING<br><span>VISIBLE.</span></h2>
+      <div class="contact-links">
+        <a href="mailto:mohamedahmedmahdyy@gmail.com">Email ↗</a>
+        <a href="https://www.linkedin.com/in/mohamed-mahdy-93705a243/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="https://www.behance.net/mohamedahmedm7" target="_blank" rel="noopener">Behance ↗</a>
+      </div>
+      <footer><span>© 2026 Mohamed Ahmed Mahdy</span><span>Architectural Visualization & AI</span><a href="#top">Back to top ↑</a></footer>
+    </section>
+  </main>
+
+  <div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+    <button class="menu-close" id="menuClose">Close</button>
+    <nav><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  </div>
+
+  <dialog class="project-viewer" id="projectViewer">
+    <div class="viewer-head">
+      <div><span id="viewerCategory">Project</span><h2 id="viewerTitle">Project</h2></div>
+      <button id="viewerClose">Close ×</button>
+    </div>
+    <div class="viewer-intro" id="viewerDescription"></div>
+    <div class="viewer-gallery" id="viewerGallery"></div>
+  </dialog>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
